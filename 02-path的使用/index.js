@@ -16,5 +16,11 @@ fs.readFile(path.join(__dirname, '../01-fs的使用/files/1.txt'), 'utf-8', (err
   }
 })
 
-const url = '/a/b/c/d/inde.html'
-const basename = url.basename()
+//获取文件名path.basename(path, [文件扩展名])
+const url = '/a/b/c/d/index.html'
+const basename = path.basename(url, '.html')
+console.log(basename)
+
+//获取文件扩展名path.extname(path)
+const extname = path.extname(url)
+console.log(extname)
