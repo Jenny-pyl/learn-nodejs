@@ -2,3 +2,4 @@ node_modules
 资料
 package.json
 package-lock.json
+.vscode/
